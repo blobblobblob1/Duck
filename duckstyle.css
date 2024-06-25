@@ -1,0 +1,47 @@
+body{
+	background-color:rgb(37, 150, 190);
+}
+.duckanim{
+	position:absolute;
+	width:20vw;
+	height:20vw;
+	border:1px solid black;
+	left:40vw;
+	top:30vh;
+	animation-name:duckydash;
+	animation-duration:5.6s;
+	animation-play-state:paused;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+}
+img{
+	position:relative;
+	top:60px;
+	left:60px;
+}
+.container{
+	position:absolute;
+	right:15px;
+}
+button {
+	padding:50px;
+	background-color: rgb(165, 116, 242);
+	font-size:20px;
+	border-right: 5px dotted black;
+	border-bottom: 5px solid black;
+	box-shadow: 5px 5px 15px gray;
+	border-radius: 10px;
+}
+@keyframes duckydash {
+	0%{top:30vh;left:40vw;}
+	25%{top:30vh;left:60vw;}
+	50{top:30vh;transform:translateX(40vw);}
+	75%{left:20vw;}
+	100%{transform:rotateY(360deg);}
+	/*0%{top:30vh;left:40vw;}
+	25%{top:40vh;left:60vw;}
+	50%{top:50vh;left:40vw;}
+	75%{top:40vh;left:20vw;}
+	100%{top:30vh;left:40vw;}*/
+}
